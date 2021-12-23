@@ -1,0 +1,111 @@
+/*  =========================
+    ==== general styling ====
+    ========================= */
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      color: hsl(0, 0%, 100%);
+    }
+    body {
+      background-color: hsl(217, 54%, 11%);
+      font-family: Outfit, Arial, Helvetica, sans-serif;
+    }
+    main {
+      width: 400px;
+      padding: 25px;
+      padding-bottom: 0px;
+      background-color: hsl(216, 50%, 16%);
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      border-radius: 15px;
+      box-shadow: 5px 12px 20px 0 hsl(219, 38%, 9%),
+        -5px -12px 20px 0 hsl(219, 38%, 9%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    main > img {
+      /* position: relative; */
+      border-radius: 7px;
+      display: block;
+    }
+    h1 {
+      font-weight: 700;
+    }
+    /* hovered items  */
+    h1:hover,
+    div:last-of-type span:hover {
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+    main > span:hover::before {
+      opacity: 0.7;
+    }
+    
+    main > span:before {
+      content: "";
+      background: hsl(178, 100%, 50%) url("images/icon-view.svg") no-repeat center;
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+      color: white;
+      top: 25px;
+      width: 350px;
+      height: 350px;
+      border-radius: 7px;
+    }
+    p {
+      color: hsl(215, 51%, 70%);
+      font-weight: 300;
+    }
+    main > p {
+      font-weight: 400;
+      font-size: 18px;
+    }
+    p + div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+    p + div img {
+      vertical-align: text-bottom;
+    }
+    p + div span {
+      color: hsl(178, 100%, 50%);
+      font-weight: 400;
+    }
+    div:last-of-type {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 1px solid hsl(215, 51%, 70%);
+    }
+    div:last-of-type img {
+      width: 40px;
+      border: 1px solid hsl(0, 0%, 100%);
+      border-radius: 50%;
+    }
+    @media (max-width: 375px) {
+      body {
+        width: 375px;
+      }
+      main {
+        width: 340px;
+        gap: 20px;
+        font-size: 0.9em;
+      }
+      main > span:before {
+        width: 290px;
+        height: 290px;
+      }
+    }
+
+
+
+
