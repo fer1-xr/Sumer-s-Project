@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  background-size: cover;
+  
+}
+
+main{
+    width: 350px;
+    height: 600px;
+    border-radius: 24px;
+    background-color: white;
+   
+    gap: 30px;
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+
+}
+body main img {
+  border-radius: 30px 30px 0px 0px;
+ 
+}
+body main h2  {
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+}
+body main p{
+  text-align: center;
+  font-size: 14px;
+  color: grey; 
+   margin: 0px 30px 0px 20px;
+}
+
+.mini-card{
+background-color: hsl(225, 100%, 98%);
+border-radius: 10px;
+width: 280px;
+height: 80px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
+justify-items: center;
+align-items: center;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan{
+ 
+  font-size: 14px;
+
+}
+.plan span{
+  color: grey;
+  font-size: 14px;
+}
+.mini-card a{
+  font-size: 12px;
+  text-decoration: none;
+  color:hsl(245, 75%, 52%);
+}
+button{
+  color: white;
+  background-color: hsl(245, 75%, 52%);  
+  border-radius: 10px;
+width: 280px;
+height: 40px;
+-webkit-box-shadow: 0px 10px 5px 2px rgba(56, 41, 224, 0.178);
+          box-shadow: 0px 10px 5px 2px rgba(56, 41, 224, 0.178);
+       
+
+}
+.btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+  gap: 20px;
+ 
+}
+button{
+  cursor: pointer;
+  border: 0px;
+  outline: none;
+}
+.btn strong{
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
