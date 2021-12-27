@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+body{
+   background-color: hsl(235, 16%, 14%); 
+font-family: Red Hat Text;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 70vh;
+   
+}
+.container h1{
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.countdown{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.countdown div{
+    margin: 10px;
+}
+.countdown p {
+    background-color: hsl(236, 21%, 26%);
+    border-radius: 10px;
+    font-size: 46px;
+    color:  hsl(345, 95%, 68%);
+    padding: 20px;/*se agrega el padding a todos lados, y crea un cuadrado por defecto*/
+}
+.countdown h3{
+    color: hsl(237, 18%, 59%);
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.stars{
+    position: absolute;
+}
+.hill{
+    position: absolute;
+    bottom: 0;
+}
+.socials {
+   
+    position: absolute;
+    bottom:  30px;
+    transform: translate(-50%);
+    left: 50%;
+    z-index: 999;
+    list-style: none;
+}
+
+
+.socials ul{
+    
+    display: flex;
+    list-style: none;
+    
+}
+.socials ul li{
+    margin: 0 20px;
+  
+}
+.socials  img:hover {
+    cursor: pointer;
+    filter: invert(38%) sepia(87%) saturate(459%) hue-rotate(295deg)
+      brightness(94%) contrast(92%);
+  }
+.attribution{
+    color: white;
+}
+@media (min-width: 1440px ){
+    .stars img,
+    .hill img{
+        width: 1530px;
+    }
+}
+
+
